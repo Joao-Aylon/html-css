@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Segunda Guerra Mundial</title>
+
+    <link rel="shortcut icon" href="logo-JL.ico/favicon.ico" type="image/x-icon">
+
+    <style>
+        body{
+            background-color: aliceblue;
+            color: black;
+            font: normal 18pt arial;
+        }
+        mark{
+            background-color: darkgreen;
+        }
+        a{
+            color: royalblue;
+        }
+        div#area{
+            background-color: darkgreen;
+            color: black;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+      
+        
+    </style>
+
+</head>
+<body>
+    
+    <img src="dia-d-450.webp" alt="Dia D">
+
+    <h1>Segunda Guerra MUndial</h1>
+
+    <hr>
+
+    <h2>Estopim</h2>
+
+    <p>
+        O mundo em 1939 estava se recuperando da <u>crise da bolsa de valores</u> em <abbr title="New York">NY</abbr>, e da <u>primeira grande guerra</u>, na Europa o cenário era delicado, pois a maioria dos países estavam envolvidos nas grandes e terriveis batalhas ocasionando em cidades destruídas, muitas pessoas mortas e a economia fragilizada, porém um país estava crescendo e se desenvolvendo no meio desse caos, essa nação era a <mark>Alemanha Nazista</mark>.
+    </p>
+
+    <p>
+        Com forte crescimento economico e militar feito em sigilo das demais nações, pos a Alemanha em um patamar bélico bem favorável, seus inimigos: Reino Unido, França e <abbr title="Estados Unidos">EUA</abbr> estavam com receio de confrontrar a Alemanha por ter desrespeitado o tratado <abbr title="O Tratado de Versalhes foi o mais famoso dos tratados de paz assinados após a Primeira Guerra Mundial. Nele, ingleses e franceses impuseram os termos da rendição alemã.">Versalhes</abbr>, pois buscavam evitar um novo conflito na fragilizada Europa.
+    </p>
+
+    <p>
+        Clique no <a href="pag01.html" rel="next" target="_self" >Link</a> e saiba mais sobre esse tratado!
+    </p>
+
+    <p>
+        <a href="pag02.html" target="_self" rel="external">Pule para a página 2!</a>
+    </p>
+
+    <p>
+        Após algumas anexações de territórios de seus vizinhos como a<mark> Áustriae e os Sudetos da Checoslováquia</mark>,Hitler se dirigiu a Polônia. Invadindo por toda a fronteira, tropas alemãs ocuparam seu território após uma breve resistência polonês. Isso foi a gota d'água para os países ocidentais da Europa, <strong>Reino Unido e a França deram um ultimato para a Alemanha</strong>, e exigiu  que os alemães retirassem suas tropas do território polonês, porém <em>Hitler achando que era apenas um blefe</em>, ignorou o ultimato e isso resultou na <u>declaração de guerra da França e Reino Unido</u>, nesse momento a segunda guerra mundial estava iniciada.
+    </p>
+
+    <h2>Conflito</h2>
+
+    <p>
+        <a href="https://www.youtube.com/watch?v=H873fcBtxfA" target="_blank" rel="external">Saiba mais sobre o conflito mais mortal da história!</a>
+    </p>
+
+    <marquee behavior="" direction="right"><strong>Guerra pela Liberdade contra a Tirania</strong>.</marquee>
+
+    <hr>
+
+    <h2>Principais Efeitos</h2>
+
+    <ul>
+        <li>Independência de muitos países da Àfrica e Àsia.</li>
+        <li>Derrota do Eixo. 
+            <ul>
+                <li>Japão</li>
+                <li>Alemanha</li>
+                <li>Itália</li>
+           </ul>
+        </li>
+        <li>Surgimento de duas <strong>grandes super potências <abbr title="União Soviética">URSS</abbr> e <abbr title="Estados Unidos">EUA</abbr>.</strong></li>
+        <li>Primeiro ataque atômico contra alvos humanos.</li>
+        <li>Início da <mark>polarização entre socialismo e capitalismo</mark> no mundo.</li>
+    </ul>
+
+    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+        
+        Interaja...
+
+    </div>
+    
+    <script>
+
+        var a = window.document.getElementById('area');
+
+        function clicar(){
+            a.innerHTML = 'Clicou!';
+            a.style.backgroundColor = 'red';
+            a.style.color = 'black';
+        }
+        function entrar(){
+            a.innerHTML = 'Entrou!';
+            a.style.backgroundColor = 'darkgreen';
+            a.style.color = 'black';
+        }
+        function sair(){
+            a.innerHTML = 'Saiu!';
+            a.style.backgroundColor = 'gray';
+            a.style.color = 'black';
+        }
+
+        window.confirm("Deseja receber notificações ?");
+        
+        var nome = window.prompt('Qual é seu nome ?');
+        
+        window.alert(`Seja bem vindo(a) ${nome}`);
+
+        window.document.write(`<br>Espero que você goste do meu site, <strong>${nome}</strong>. `)
+
+    </script>
+
+</body>
+</html>

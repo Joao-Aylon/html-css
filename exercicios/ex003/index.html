@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <title>Aplicando imagens &#X1F4BB;</title>
+
+    <style>
+        body{
+            background-color: gray;
+            font: normal 18pt arial;
+            color: black;
+
+        }
+        div#area{
+            background-color: darkgreen;
+            color: black;
+            height: 200px;
+            width: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+  
+    <h1>&lt;Testando  carga e imagens &#x1F30E;/&gt;</h1>
+
+   <p>Abaixo você verá uma imagem que está na mesma pasta. <br>
+    <hr>
+    <img src="logo-html-200.png" alt="Logo HTML5">
+    <br>Linguagem de Marcação de Hiper Texto.
+    <hr> 
+
+    <img src="logo-css-200.png" alt="Logo de CSS">
+    <br>Folhas em Estilo em Cascatas.
+    <hr>
+
+   </p>
+
+   <h2>Sub-PAstas de imagens&#x1F482;</h2>
+   
+   <p>Podemos também carregar imagens que estão em sub-pastas.</p>
+
+   <img src="imagens/tank-de-guerra-250.webp" alt="Imagem ilustrativa de um blindado pesado.">
+
+   <hr>
+
+   <p>E também podemos carregar imagens externas.</p>
+
+   <img src="https://static.wikia.nocookie.net/residentevil/images/c/c6/Umbrellaemblem.png/revision/latest/scale-to-width/360?cb=20240618173832" alt="Logo da companhia Umbrella Corporation">
+
+   <hr>
+
+   <img src="stormtroopers-350.jpg" alt="Soldados Imperias de Star wars">
+
+   <h2>Stormtrooper</h2>
+
+   <dt>
+    Quem são os Stormtroopers?
+   </dt>
+   
+   <br>
+
+   <dd>
+    Os <abbr title="soldado de assalto">Stormtroopers</abbr> eram a <strong>tropa de elite do Império Galático</strong>. Como os <u>Destróieres Estelares classe Imperial</u> e os caças TIE os Stormtroopers serviram como lembrete do poder do <mark>Imperador</mark>, as extensões de sua vontade e um método de manter o Império em milhares de sistemas estelares, em <em>conformidade com o medo</em>.
+   </dd>
+
+   <br>
+
+   <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+
+    Interagir
+
+   </div>
+
+   <hr>
+  
+  
+  <script>
+    
+    var area = window.document.getElementById('area');
+
+     function clicar(){
+        area.innerHTML = 'Clicou!';
+        area.style.backgroundColor = 'darkblue';
+
+     }
+     function entrar(){
+        area.innerHTML = 'Entrou!';
+        area.style.backgroundColor = 'darkred';
+
+     }
+     function sair(){
+        area.innerHTML = 'Saiu!';
+        area.style.backgroundColor = 'darkviolet';
+
+     }
+
+     var a = window.prompt('Qual é seu nome ?');
+     window.alert(`Seja bem vindo ${a}!`);
+     window.confirm('Deseja receber Cookies ?');
+
+     window.document.write(`<strong>${a}</strong>, espero que goste do meu site !`)
+
+
+   </script>
+
+
+
+</body>
+</html>

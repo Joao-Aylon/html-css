@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="logo-JL.ico/favicon.ico" type="image/x-icon">
+
+    <title>Ásia</title>
+
+    <style>
+        body{
+            background-color: darkgreen;
+            color: white;
+            font:  normal 20pt arial;
+
+        }
+    </style>
+
+</head>
+<body>
+    
+    <h1>Continente asiático</h1>
+
+    <p>Escolha alguns dos países listados abaixo para conhecer um pouco melhor!</p>
+
+    <ul>
+        <li>Japão</li>
+        <li>China</li>
+        <li>Coreia do Sul</li>
+    </ul>
+
+    Selecione um país da lista acima: <input type="text" name="txtclass" id="txtclass">
+
+    <input type="button" value="Verificar" onclick="clicar()">
+
+    <p><a href="index.html" target="_self" rel="external">Volte para o site inicial</a></p>
+
+    <p><a href="pag01.html" target="_self" rel="external">Volte para a página anterior</a></p>
+
+    <div id="area" >
+
+    </div>
+
+    <script>
+
+        function clicar(){
+            var a = window.document.querySelector('input#txtclass');
+            var b = window.document.querySelector('div#area');
+            var paises = String(a.value);
+
+            b.innerHTML += `<p>Você escolheu o país <strong>${paises}</strong>.`;
+
+            if ( paises == 'Japão' || paises == 'japão'){
+                b.innerHTML += `${paises} é um país pequeno localizado no extremo leste do continente asiático. Sendo uma ilha com muitos arquipelagos e tendo muitas montanhas em sua constituição geológica. O ${paises} é uma das maiores economias e fonte pesquisas e refência tecnologia.`
+
+            }
+            else{
+                if ( paises == 'China' || paises == 'china'){
+                    b.innerHTML += `${paises} é o quarto maior país do mundo em extensão territórial e o segundo mais populoso do mundo. Sendo referência em tecnologia e demostrando avanços na economia e  no comércio mundial. `
+            
+                }
+                else if ( paises == 'Coreia do Sul' || paises == 'coreia do sul'){
+                    b.innerHTML += `${paises} é um pequeno país no continente asiático, sendo um dos famosos tigres asiático, este país tem um alto grau de tecnologia e uma forte economia.`
+
+                }
+                else{
+                    b.innerHTML += 'Por favor, escolha um dos países listados!'
+                }
+
+            }
+
+
+        }
+
+
+    </script>
+
+
+
+</body>
+</html>

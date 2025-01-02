@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="shortcut icon" href="logo-JL.ico/favicon.ico" type="image/x-icon">
+
+    <title>Listas</title>
+
+    <style>
+
+        body{
+            background-color: black;
+            color: white;
+            font: normal 15pt normal;
+        }
+         mark{
+            background-color: red;
+         }   
+    
+    </style>
+    </head>
+
+<body>
+    
+    <h1>Trabalhando com Listas. &#x1F60E;</h1>
+
+    <hr>
+
+    <h2><ins>Listas Ordenadas</ins></h2>
+
+   <ol type= "1"> <!-- O Type muda o estilo da lista -->
+        <li>Aprender JavaScript</li>
+        <li>Aprender C++</li>
+        <li>Aprender <abbr title="HyperText Markup Language">HTML5</abbr></li>
+        <li>Aprender <abbr title="Cascading Style Sheets">CSS</abbr></li>
+        <li>Aprender C</li>
+        <li>Aprender C#</li>
+        <li>Aprender Python</li>
+   </ol>
+   <!--Para criar Lista de Forma Ordenadas, deve-se usar as Tags "ol" e "li". -->
+
+   <marquee behavior="" direction="right"> Olá, Estudantes! </marquee>
+
+   <h2>Listas Não Ordenadas</h2>
+
+   <ul type="square"> <!-- Estilos: square , disc , circle -->
+        <li>Encontrar um emprego</li>
+        <li>Começar a Faculdade</li>
+        <li>Namorar</li>
+        <li>Aprender Inglês</li>
+        <li>Aprender Japonês</li>
+        <li>Me tornar um <strong>Programador</strong></li>
+        <li>Me casar</li>
+        <li>Visitar a Àsia</li>
+   </ul>
+   <!-- Para criar listas Não ordenadas, deve-se usar a Tag "ul" e "li". -->
+
+   <h2>Minhas Linguagens Favoritas</h2>
+
+   <ol>
+        <li>Antigas:</li>
+            <ol type="a">
+                    <li>Visual Basic</li>
+                    <li>Clipper</li>
+                    <li>Fortran</li>
+            </ol>
+        
+        <li>Novas:</li>
+            <ol type="a">
+                    <li>JavaScript</li>
+                    <li>Python</li>
+                    <li>C#</li>
+                    <li>PHP</li>
+            </ol>
+
+   </ol>
+
+   <h2>Meus Jogos Favoritos &#x1F4FA;</h2>
+
+   <ol>
+        <li>PlayStation</li>
+            <ol>
+                <li>Call of Duty</li>
+                    <ul>
+                        <li> Call of Duty: Ghosts</li>
+                        <li>Call of Duty 3</li>
+                        <li>Call of Duty 2 </li>
+                    </ul>
+                <li>Ghost of Tsushima</li>
+                <li>Battlefield</li>
+                <li>Resident Evil</li>
+                <li>Assassin Screed</li>
+            </ol>
+        <li>Xbox</li>
+            <ul>
+                <li>Halo</li> 
+                <li>Forza Horizon</li>
+                <li>Call of Duty</li>
+            </ul>
+
+   </ol>
+
+   <h2>Lista de Definição</h2>
+
+   <dl>
+        <dt>Samurais</dt>
+        <dd>Guerreiros Japoneses que tem um código de honra e tradição, lutam pelos seus senhores.</dd>
+        <dt>Ninjas</dt>
+        <dd>Guerreiros assassinos que agem nas sombras e usam armas especiais.</dd>
+        <dt>Rounnis</dt>
+        <dd>Guerreiros samurais renegados que quebraram o código samurai.</dd>
+
+
+   </dl>
+
+   <hr>
+
+   <script>
+
+    var nome = String(window.prompt(`Qual é seu nome ?`));
+    window.alert(`Olá, ${nome}!`);
+    document.write(`Bem-vindo a aula de lista que eu criei!, ${nome}.`)
+
+   </script>
+
+
+</body>
+</html>

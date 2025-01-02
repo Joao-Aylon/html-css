@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="shortcut icon" href="logo-JL.ico/favicon.ico" type="image/x-icon">
+
+    <title>🫡Meu primeiro exercício</title>
+    
+    <style>
+        body{
+            background-color:black;
+            font: normal 18pt arial;
+            color: white;
+        }
+        mark{
+            background-color: yellow;
+            
+        }
+        strong{
+            font: normal 25pt arial;
+        }
+        div#area{
+
+            background-color: darkred;
+            color: black;
+            font: normal 35pt arial;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center
+            ;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <h1>Olá, Mundo! &#x1F680;</h1>
+    
+    <hr>
+    
+    <p>
+        Olá visitante, esse é meu <mark>projeto inicial</mark> de site nessa longa e divertida jornada no mundo da programação.
+    </p>
+    <p>
+        João, estude e der seu melhor!
+    </p>
+    
+    <p><hr></p>
+    
+    <p>
+        Usasse as tags &lt;p&gt; para abrir uma tag e usasse &lt;/p&gt; para fechar uma tag de parágrafo.
+        
+    </p>
+
+    <marquee behavior="" direction="right">Olá, Estudante!</marquee>
+
+    <hr>
+
+    <h2>Exercício das Aulas</h2>
+
+    <p>
+        Estaremos testendo novas tags e e funções de texto e exercícios que aprendi.
+    </p>
+    <p>
+        Lorem, <em>ipsum dolor</em> sit amet consectetur adipisicing elit. Nobis assumenda <del>facere laborum minima</del>, eaque eligendi. Totam, <strong>odio aperiam</strong> laudantium perspiciatis dolor dolorem ullam? Ad voluptatem id animi, <ins>voluptatum inventore</ins> quaerat?
+    </p>
+
+    <div id = 'area' onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+
+        Interaja...
+
+    </div>
+
+    <script>
+        
+        var a = window.document.getElementById('area');
+
+        function clicar(){
+
+            a.innerText = 'Clicou!';
+            a.style.backgroundColor = 'white';
+            a.style.color = 'black';
+        
+
+        }
+
+        function entrar(){
+
+            a.innerText = 'Entrou!';
+            a.style.backgroundColor = 'darkred';
+
+        }
+
+        function sair(){
+
+            a.innerText = 'Saiu!';
+            a.style.backgroundColor = 'lime';
+            
+        }
+
+        
+        var nome = String(window.prompt("Digíte seu nome:"));
+        
+        window.alert(`Olá ${nome}, como vai ?`);
+        
+        document.write(`É um <strong>grande</strong> prazer em recebe-lo(a) <mark>${nome}</mark> no meu site ! <br/>`);
+        
+        document.write(`Seu nome tem ${nome.length} letras.`);
+        
+
+
+    </script>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Fontes em CSS</title>
+
+    <style>
+        body{
+
+            /*Use o link para ver mais fontes:  CSS web safe font combinations*/
+
+            font-family: Arial, Helvetica, sans-serif;
+
+            /*
+            font-family: 'Courier New';
+            font-family: Verdana;
+            font-family: Helvetica;
+            font-family: serif;
+            font-family: monospace;
+            */
+
+            font-size: 16px;/* 16px altura padrão == 1em */
+            
+            /*
+            Medidas absolutas
+            cm, mm, in(polegadas), pt, pc, [px]recomendado
+
+            Medidas Relativas
+            [em]recomendado, ex,rem, vw, vh, %
+
+            */
+
+            font-weight: 600;
+            font-style: italic;
+            text-decoration: underline;
+            
+        }
+        h1{
+            /*
+            Usa-se o shorthand para abreviar varias declarações em uma só linha.
+
+            shorthand font = ordem de declaração!
+            - font-style -> font-weight -> font-size -> font-family
+            
+            font-family: 'Work Sans', sans-serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;
+
+            */
+            font: italic bolder 3em 'Work Sans', sans-serif;
+
+        }
+    </style>
+
+</head>
+<body>
+
+    <h1>Trabalhando com Fontes</h1>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio explicabo, eius optio nesciunt nemo id eligendi impedit! Totam optio aut dolorem minima, ipsum quis quasi exercitationem deserunt, voluptatem aspernatur sapiente. Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem placeat ipsa officia explicabo beatae tempora molestiae, dolorem reiciendis consectetur nihil quia sed eum unde impedit corporis? Quaerat placeat blanditiis optio.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium officia tempore molestias, laborum esse harum, aliquam explicabo a delectus hic impedit libero vero reprehenderit repudiandae eius nemo suscipit tempora cupiditate.</p>
+    
+    <h2>Subtítilo do exercício</h2>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, repellendus voluptatibus distinctio pariatur dolor deserunt asperiores ratione obcaecati, quidem hic numquam eum voluptatum, natus sit fugiat id modi quisquam labore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, dignissimos unde consequatur ut quidem reprehenderit, laborum, odio aliquam minus eos nemo! Illum autem repudiandae nesciunt, voluptatibus nisi natus nihil cumque?</p>
+
+    <p>Use esse link para ver mais sobre <strong>outras fontes</strong>: <a href="https://www.w3schools.com/cssref/css_websafe_fonts.php" target="_parent" rel="external">click aqui!</a></p>
+
+</body>
+</html>

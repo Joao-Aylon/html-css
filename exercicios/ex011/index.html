@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Mídias em HTML5</title>
+
+    <style>
+        body{
+            background-color: gray;
+            color: black;
+            font: normal 18pt arial;
+        }
+    </style>
+
+</head>
+<body>
+    
+<h1>Imagem Dinâmica</h1>
+
+<p>
+    Tente abrir esse site em vários <strong>dispositivos diferentes</strong> ou, simplesmente, <strong>aumente e diminua o tamanho</strong>  do seu navegador.
+</p>
+
+<picture>
+
+    <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+    <!--3° etapa-->
+    
+    <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+    <!--2° etapa-->
+    
+    <img src="imagens/foto-g.png" alt="imagem flexível">
+    <!--1° etapa, imagem padrão-->
+    
+</picture>
+
+<h1>Reproduzindo Áudio</h1>
+
+<p>
+    Vamos aprender a reproduzir áudios em <abbr title="Hypertext Markup Language,">HTML5.</abbr>
+</p>
+
+<audio src="midia/piano.mp3" controls autoplay loop></audio>
+<!--A tag audio é compativél MP3, WAV e OGG'-->
+
+<audio preload="metadata" controls autoplay>
+    
+    <source src="midia/podcast.mp3" type="audio/mpeg">
+    <source src="midia/podcast.ogg" type="audio/ogg">
+    <source src="midia/podcast.wav" type="audio/wav">
+    <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/podcast.mp3">Clique aqui para acessar!</a></p>
+
+</audio>
+
+</body>
+</html>

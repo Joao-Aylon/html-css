@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    
+    <style>
+        @font-face{
+            font-family: 'Japan';
+            src: url(fontes/Japan\ wave.ttf) format(truetype);
+            font-weight: normal;
+            font-style: normal;
+
+
+            /*
+             
+                Tipos de format()
+                - opentype  (otf)
+                - truetype  (ttf)
+                - embedded-opentype
+                - truetype-aat (Apple Advanced Typography)
+                - svg
+
+            */
+
+        }
+        @font-face{
+            font-family:'gang' ;
+            src: url(fontes/go3v2.ttf) format(truetype);
+            font-weight: normal;
+            font-style: normal;
+
+        }
+
+        p{
+            font-family: 'Japan';
+            font-size: 32px; /* 16px = 1em */
+        }
+        h1{
+            font-family: 'Japan';
+            font-size: 3em;
+            font-weight: normal;
+            font-style: normal;
+        
+        }
+        h2{
+            font-family: 'gang';
+            font-size: 3em;
+            font-weight: normal;
+            font-style: normal;
+        }
+        p#tet{
+            font-family: 'gang';
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+
+
+
+    </style>
+
+</head>
+<body>
+    <h1>Título</h1>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus facilis possimus eaque eos perferendis voluptatibus in pariatur sit non fuga veritatis nihil corporis dolore praesentium, velit consequatur est. Pariatur, recusandae.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae unde nulla autem eos aliquam suscipit voluptatem modi officiis tempora consequuntur nam repellendus, laudantium reiciendis atque pariatur blanditiis, id cumque quos?</p>
+
+    <hr>
+
+    <h2>Subtítulo</h2>
+
+    <p id="tet">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero rem unde doloribus delectus, sit nobis, cupiditate eos asperiores aperiam, neque obcaecati eius pariatur quis consequatur assumenda odit mollitia! Cupiditate, laboriosam?</p>
+
+    <p id="tet">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod deleniti debitis doloremque quos quo repudiandae dolorem numquam, odio unde quas at velit voluptate ducimus similique voluptates molestias, placeat perferendis explicabo?</p>
+
+
+    
+</body>
+</html>

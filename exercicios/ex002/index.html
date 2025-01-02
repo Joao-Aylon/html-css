@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Parágrafos &#x1F916;</title>
+
+    <style>
+        body{
+            background-color: darkgreen;
+            color: black;
+            font: normal 18pt arial;
+        }
+        div#area{
+            background-color: black;
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+        a{
+            color: blue;
+        }
+
+    </style>
+
+    <link rel="shortcut icon" href="logo-JL.ico/favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+    
+    <h1>Parágrafos e quebras de linhas 💂🏻 </h1>
+    <hr>
+    
+    <p> Você pode escrever um parágrafo de qualquer jeito.Basta colocar tudo no meio de um par de tags &lt;p&gt; &lt;/p&gt;. </p>
+   
+    <p> Se você precisar quebrar o texto em algum lugar específico  <br> como esse,  você pode usar a tag &lt;br&gt;. </p>
+
+    <p> Para colocar no programa um exemplo de tag usando a linguagem dele sem atrapalhar na execussão, usasse  "&lt;" e "&gt;" <br>
+    exemplo:  &lt;p&gt; &lt;/p&gt; </p> <!--Olá, esse é um comentário que não irá aparecer no site.-->
+
+    <p>nessa mesma aula aprederemos a usar os famosos emojis e símbolos especiais. <br> observe... <br>
+        <hr>
+        &reg;   <br>
+        &copy;  <br>
+        &trade; <br>
+        &euro;  <br>
+        &pound; <br>
+        &yen;   <br>
+        &cent;  <br>
+        &delta; <br>
+        &Delta; <br>
+        &uarr;  <br>
+    </p>
+
+    <div id = 'area' onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+
+        Interagir
+
+    </div>
+    
+    <hr>
+
+    <p>
+        Agora iremos aplicar os emojis: <br> 
+        😎
+        <br>
+        &#x1F303;
+        <br>
+        &#x1F5FE;
+        <br>
+        ☢️
+
+    </p>
+
+    <p>
+        Use esse <a href="https://g1.globo.com/" target="_blank" rel="external">link </a> para acessar a página do G1.
+    </p>
+
+    <script>
+        
+        var a = window.document.getElementById('area');
+
+        function clicar(){
+            a.innerHTML = 'Clicou!';
+            a.style.backgroundColor = 'purple';
+            a.style.color ='black';
+        }
+        function entrar(){
+            a.innerHTML = 'Entrou!';
+            a.style.backgroundColor = 'black';
+            a.style.color = 'white';
+        }
+        function sair(){
+            a.innerHTML = 'Saiu!';
+            a.style.backgroundColor = 'red';
+            a.style.color = 'black';
+        }
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pseudo-Classes</title>
+
+    <style>
+
+        body{
+            font-size: 3em;
+        }
+        div{
+            display: inline-block;/*Tudo na mesma Linha*/
+            background-color: rgb(255, 180, 180);
+            text-align: center;
+            height: 200px;
+            width: 200px;
+            border: 5px solid rgb(1, 1, 1);
+            
+        }
+
+        div:hover{
+
+            /*Hover é uma ação que é acionada ao passar o mouse!*/
+            /*Os (:) são uma Subclasse ou PseudoClasse*/
+
+            background-color: dimgray;
+            color: white;
+            border: 5px solid rgb(255, 1, 1);
+
+        }
+        
+
+    </style>
+
+</head>
+<body>
+    
+    <div id="d1">01</div>
+    <div id="d2">02</div>
+    <div id="d3">03</div>
+
+
+</body>
+</html>

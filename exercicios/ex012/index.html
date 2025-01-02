@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="estilo.css">
+    
+    <link rel="shortcut icon" href="logo-JL.ico/favicon.ico" type="image/x-icon">
+
+    <title>Vídeos com HTML5</title>
+
+</head>
+<body>
+
+    <h1>Inserindo vídeos hospedados localmente</h1>
+
+    <hr>
+
+    <p>
+        Este vídeo está hospedado no meu próprio servidor!
+    </p>
+
+    <video controls poster="imagens/foto-001.jpg" loop>
+
+        <!--A opção "poster" serve como capa do vídeo-->
+        <!--Esse método geralmente é caro-->
+        
+        <source src="midia/train-video-webm.webm" type="video/webm">
+        <source src="midia/train-video-mp4.mp4" type="video/mp4">
+        
+        <p>
+            Seu navegador não tem compatibilidade com a reprodução de vídeos.
+        </p>
+
+    </video>
+
+    <hr>
+
+    <h2>Inserindo Vídeo Externos do YouTube</h2>
+
+    
+    <iframe width="400" height="500" src="https://www.youtube.com/embed/FdE5G95B7Mg?si=dbh1odV0R6TPIn0p" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <h2>Inserindo Vídeo no Vimeo</h2>
+
+    <hr>
+
+    <iframe src="https://player.vimeo.com/video/185871317?h=a63f42bf1b&color=ff0179&portrait=0" width="400" height="225" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+    
+    <hr>
+    
+    <iframe width="400" height="300" src="https://www.youtube.com/embed/F1rcV3zihjE?si=S7nHxEmpuLdgAv00" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+</body>
+</html>

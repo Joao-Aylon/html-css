@@ -1,0 +1,9 @@
+body{
+    background-color: darkred;
+    color: white;
+    font: normal 18pt arial;
+}
+video{
+    width: 400px;
+    height: 500px
+}

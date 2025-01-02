@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="py-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="shortcut icon" href="logo-JL.ico/favicon.ico" type="image/x-icon">
+    
+    <title>Trabalando com Links</title>
+
+    <style>
+        body{
+            background-color:ghostwhite;
+            font: normal 18pt arial;
+        }
+        
+        mark{
+            background-color: firebrick;
+        
+        }
+        div#area{
+            background-color: darkred;
+            font: normal 20pt arial;
+            color: black;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+        
+        a {
+            color: red;
+            font: normal 20pt italic;
+        }
+       
+
+    </style>
+
+</head>
+<body>
+
+    <img src="santuario-de-fushimi-500.avif" alt="Santuário japonês">
+
+    <h1>Links Externos</h1><!--Esse tipo de link levará o usuário para outro site.-->
+
+    <hr>
+
+    <p>
+        Você pode acessar a <a href="https://www.sp.br.emb-japan.go.jp/itprtop_pt/index.html" target="_blank" rel="external">página oficial da embaixada japonesa</a> aqui em São Paulo.
+    </p> <!--Observe que as tags dentro da tag link, são a target = "_blank" e re = "external". São usadas afim de manter o caminho do seu site após o usuário clicar no link externo.-->
+    
+    <p>
+        Na <abbr title="Termo utilizado para se referir ao Japão" >terra do sol nascente</abbr> abriga uma imensa riqueza de tradições e culturas que são o legado dos seus antepassado. 
+    </p>
+    <p>
+        O passado dessa ilha abriga feitos <em>grandiosos e ao mesmo tempo sombios</em>, que mudaram a vida daquela sociedade para sempre! Após era de <u>guerra de clãs</u>, houve a <mark>unificação</mark> e seguimento de uma paz que possibilitou o crescimento do futuro <strong>imperio japonês</strong>.
+    </p>
+    
+    <marquee behavior="" direction="right"><strong>Japão, um país milenar</strong></marquee>
+
+    <p>
+        Entenda mais sobre esse período instável do <abbr title="Japão">Nihon</abbr> nessa era usando esse <a href="https://www.youtube.com/watch?v=uncLQV4Y3_s" target="_blank" rel="external">link do Youtuber</a>.
+    </p>
+
+    <p>
+        Um certo sábio japonês disse um vez: <blockquote><em><q>Pouco se aprende com a vitória, mas muito com a derrota.</q></em></blockquote>
+    </p>
+
+    <div id = 'area' onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+
+        Interaja...
+
+    </div>
+
+    <hr>
+    
+    <h2>Usando Links Internos</h2>
+
+    <P>
+        Está é a <strong>primeira página</strong> do meu site.Acesse também a <mark>segunda página</mark> do meu site usando este <a href="pag002.html" rel="next" target="_self">link</a> 
+    </P>
+
+    <p>
+        <a href="noticias/pag003.html" target="_self" rel="next">Acesse nos site de notícias!</a>
+    </p>
+
+    <h1>Links para Download</h1>
+    
+    <ul>
+        <li><a href="livro/Livro-de-JavaScript.lnk" download="Livro-de-JavaScript">Baixar PDF</a> para o Ebook de JavaScript.</li>
+    </ul>
+
+    <script>
+
+        var a = window.document.getElementById('area');
+        
+        function clicar(){
+            a.innerText = 'Clicou!';
+            a.style.backgroundColor = 'gray';
+            a.style.color = 'darkred';
+
+        }
+
+        function entrar(){
+           a.innerText = 'Entrou!';
+           a.style.backgroundColor = 'darkred';
+           a.style.color = 'black';
+
+        }
+
+        function sair(){
+            a.innerText = 'Saiu!';
+            a.style.backgroundColor = 'darkblue'
+            a.style.color = 'black';
+            
+        }
+        
+        /*
+        window.confirm('Olá, deseja receber Cookies ?');
+        
+        var nome = window.prompt('Qual seu Nome ?');
+        
+        window.alert(`Bem-Vindo(a) ${nome}`);
+        
+        window.document.write(`Espero que você goste do meu site,<strong> ${nome}</strong>!`);
+        */
+
+    </script>
+</body>
+</html>

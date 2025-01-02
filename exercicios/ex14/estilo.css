@@ -1,0 +1,21 @@
+body{
+    font:  normal 18pt arial;
+    background-color: rgba(14, 19, 89, 0.896);
+    color: white;
+
+}
+h2{
+    background-color: blue;
+    color: white;
+    text-align: center;
+    font: normal 20pt italic;
+    border-radius: 15px;
+    margin: 15px;
+    
+}
+h2#war{
+    background-color: rgb(77, 40, 128);
+    color: white;
+    text-align: center;
+    font: normal 20pt italic;
+}

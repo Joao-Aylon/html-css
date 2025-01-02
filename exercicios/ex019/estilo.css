@@ -1,0 +1,33 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'iza';
+    src: url(fontes/monofonto\ rg.otf) format(opentype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    background-color: #00AFF0;
+    font-family: 'iza';
+    font-size: 32px;
+    text-align: justify;
+}
+h1{
+    color: #0025DB;
+    text-align: center;
+    
+}
+h2{
+    color: #0025DB;
+    text-align: center;
+}
+h1#principal{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: white;
+    box-shadow: 10px 10px 5px black;
+}
+.aprendendo{
+    background-color: rgb(3, 3, 85);
+    color: white;
+    border-radius: 10px;
+}
